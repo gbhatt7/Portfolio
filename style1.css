@@ -108,7 +108,7 @@ ion-icon {
 }
 .rectangle ul li a:hover .text {
     display: block;
-    left: 35px;
+    left: 38px;
     position: absolute;
     opacity: 0;
     font-size: 1.4rem;
