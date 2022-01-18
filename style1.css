@@ -28,7 +28,6 @@ ion-icon {
 }
 
 .rectangle:hover {
-    /* transform: scaleX(1.45) scaleY(1.5) translateX(5px); */
     z-index: 1000;
     backdrop-filter: blur(50%);
 }
@@ -41,13 +40,14 @@ ion-icon {
     list-style: none;
 }
 ::-webkit-scrollbar{
-    width: 2em;
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background: red;
+    background: black;
 }
 ::-webkit-scrollbar-thumb{
-    background: lightblue;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    border-radius: 20px;
 }
 .rectangle ul li {
     position: relative;
@@ -73,9 +73,6 @@ ion-icon {
     position: relative;
 }
 
-
-
-
 .rectangle ul li a .icon {
     padding: 5px;
     position: relative;
@@ -94,9 +91,6 @@ ion-icon {
     padding: 5px;
     opacity: 0;
 }
-/* .rectangle ul li a .icon :nth-child(1) {
-    padding-top: 3px;
-} */
 
 .rectangle ul:hover li a .icon {
     opacity: 0.1;
@@ -128,15 +122,15 @@ ion-icon {
 }
 
 .rectangle ul li:nth-child(2) a .icon:hover {
-    color: #ff3838;
-    box-shadow: 0 0px 5px 0 #ff3838;
-    border: 1px solid #ff3838;
+    color: #ff3853;
+    box-shadow: 0 0px 5px 0 #ff3853;
+    border: 1px solid #ff3853;
     transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(2) a:hover .text{
-    color: lightsalmon;
+    color: rgb(255, 102, 102);
     opacity: 1;
-    text-shadow: 1px 1px 10px #ff3838;
+    text-shadow: 1px 1px 10px #ff3853;
 }
 
 .rectangle ul li:nth-child(3) a .icon:hover {
