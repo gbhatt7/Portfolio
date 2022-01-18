@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    background: black;
+    min-height: 100vh;
+}
+
+.rectangle {
+    position: fixed;
+    width: 18.5px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-top: 160px;
+    transition: 0.5s;
+    backdrop-filter: blur(30%);
+    padding: 15px;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+.rectangle:hover {
+    transform: scaleX(1.45) scaleY(1.5) translateX(5px);
+    z-index: 1000;
+    backdrop-filter: blur(50%);
+}
+.container{
+    width: 400px;
+    min-height: 400px;
+}
+.rectangle ul {
+    display: list-item;
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 2em;
+}
+::-webkit-scrollbar-track{
+    background: red;
+}
+::-webkit-scrollbar-thumb{
+    background: lightblue;
+}
+.rectangle ul li {
+    position: relative;
+    list-style: none;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.rectangle ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.rectangle ul li a{
+    display: flex;
+    position: relative;
+}
+
+.rectangle ul li a .icon {
+    position: relative;
+    line-height: auto;
+    transition: 0.5s;
+    font-size: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.rectangle ul li a .icon {
+    font-size: auto;
+    transform: translateY(0px);
+    padding: 5px;
+}
+
+.rectangle ul li a .icon {
+    position: relative;
+    line-height: auto;
+    transition: 0.5s;
+    font-size: auto;
+    border-radius: 20%;
+    transition: 0.5s ease-in;
+    position: relative;
+}
+.text{
+    display: none;
+    left: 20px;
+    position: absolute;
+    padding: 5px;
+}
+.rectangle ul li a .icon :nth-child(1) {
+    padding-top: 3px;
+}
+
+.rectangle ul:hover li a .icon {
+    opacity: 0.1;
+}
+
+.rectangle ul li a:hover .icon{
+    opacity: 1;
+}
+.rectangle ul li a:hover .text {
+    display: block;
+    left: 20px;
+    position: absolute;
+    opacity: 2;
+}
+
+.rectangle ul li:nth-child(1) a .icon:hover {
+    color: chocolate;
+    box-shadow: 0 3px 5px 0 chocolate;
+    text-shadow: 0 0 5px chocolate, 0 0 5px chocolate;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(1) a:hover .text{
+    color: rgb(216, 191, 153);
+    text-shadow: 1px 1px 5px chocolate;
+}
+
+.rectangle ul li:nth-child(2) a .icon:hover {
+    color: #ff3838;
+    box-shadow: 0 3px 5px 0 #ff3838;
+    text-shadow: 0 0 5px #ff3838, 0 0 5px #ff3838;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(2) a:hover .text{
+    color: lightsalmon;
+    text-shadow: 1px 1px 5px #ff3838;
+}
+
+.rectangle ul li:nth-child(3) a .icon:hover {
+    color: #00d0ff;
+    box-shadow: 0 3px 5px 0 #00d0ff;
+    text-shadow: 0 0 5px #00d0ff, 0 0 5px #00d0ff;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(3) a:hover .text{
+    color: lightskyblue;
+    text-shadow: 1px 1px 5px #00d0ff;
+}
+.rectangle ul li:nth-child(4) a .icon:hover {
+    color: #ff0086;
+    box-shadow: 0 3px 5px 0 #ff0086;
+    text-shadow: 0 0 5px #ff0086, 0 0 5px #ff0086;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(4) a:hover .text{
+    color: lightpink;
+    text-shadow: 1px 1px 5px #ff0086;
+}
+.rectangle ul li:nth-child(5) a .icon:hover {
+    color: #FFB300;
+    box-shadow: 0 3px 5px 0 #FFB300;
+    text-shadow: 0 0 5px #FFB300, 0 0 5px #FFB300;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(5) a:hover .text{
+    color: burlywood;
+    text-shadow: 1px 1px 3px #FFB300;
+}
+.rectangle ul li:nth-child(6) a .icon:hover {
+    color: #1cc41c;
+    box-shadow: 0 3px 5px 0 #1cc41c;
+    text-shadow: 0 0 5px #1cc41c, 0 0 5px #1cc41c;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(6) a:hover .text{
+    color: lightgreen;
+    text-shadow: 1px 1px 5px #1cc41c;
+}
+.rectangle ul li:nth-child(7) a .icon:hover {
+    color: #1456de;
+    box-shadow: 0 3px 5px 0 #1456de;
+    text-shadow: 0 0 5px #1456de, 0 0 5px #1456de;
+    transform: scale(1.35) translateX(2px);
+}
+.rectangle ul li:nth-child(7) a:hover .text{
+    color: rgb(143, 143, 252);
+    text-shadow: 1px 1px 5px #1456de;
+}
