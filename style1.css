@@ -128,9 +128,9 @@ ion-icon {
     transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(2) a:hover .text{
-    color: rgb(255, 102, 102);
+    color: #ff3853;
     opacity: 1;
-    text-shadow: 1px 1px 10px #ff3853;
+    text-shadow: 1px 1px 10px #ff5e5e;
 }
 
 .rectangle ul li:nth-child(3) a .icon:hover {
