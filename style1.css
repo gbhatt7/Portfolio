@@ -33,7 +33,7 @@ ion-icon {
 }
 .container{
     width: 400px;
-    min-height: 400px;
+    min-height: 200vh;
 }
 .rectangle ul {
     display: list-item;
