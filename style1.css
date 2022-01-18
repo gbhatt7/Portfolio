@@ -122,69 +122,75 @@ ion-icon {
     transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(1) a:hover .text{
-    color: rgb(216, 191, 153);
+    color: rgb(255, 178, 123);
     opacity: 1;
     text-shadow: 1px 1px 5px chocolate;
 }
 
 .rectangle ul li:nth-child(2) a .icon:hover {
     color: #ff3838;
-    box-shadow: 0 3px 5px 0 #ff3838;
-    text-shadow: 0 0 5px #ff3838, 0 0 5px #ff3838;
-    transform: scale(1.35) translateX(2px);
+    box-shadow: 0 0px 5px 0 #ff3838;
+    border: 1px solid #ff3838;
+    transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(2) a:hover .text{
     color: lightsalmon;
+    opacity: 1;
     text-shadow: 1px 1px 5px #ff3838;
 }
 
 .rectangle ul li:nth-child(3) a .icon:hover {
     color: #00d0ff;
     box-shadow: 0 3px 5px 0 #00d0ff;
-    text-shadow: 0 0 5px #00d0ff, 0 0 5px #00d0ff;
+    border: 1px solid  #00d0ff;
     transform: scale(1.35) translateX(2px);
 }
 .rectangle ul li:nth-child(3) a:hover .text{
     color: lightskyblue;
+    opacity: 1;
     text-shadow: 1px 1px 5px #00d0ff;
 }
 .rectangle ul li:nth-child(4) a .icon:hover {
     color: #ff0086;
     box-shadow: 0 3px 5px 0 #ff0086;
-    text-shadow: 0 0 5px #ff0086, 0 0 5px #ff0086;
+    border: 1px solid  #ff0086;
     transform: scale(1.35) translateX(2px);
 }
 .rectangle ul li:nth-child(4) a:hover .text{
     color: lightpink;
+    opacity: 1;
     text-shadow: 1px 1px 5px #ff0086;
 }
 .rectangle ul li:nth-child(5) a .icon:hover {
     color: #FFB300;
     box-shadow: 0 3px 5px 0 #FFB300;
-    text-shadow: 0 0 5px #FFB300, 0 0 5px #FFB300;
+    border: 1px solid  #FFB300;
     transform: scale(1.35) translateX(2px);
 }
 .rectangle ul li:nth-child(5) a:hover .text{
     color: burlywood;
+    opacity: 1;
     text-shadow: 1px 1px 3px #FFB300;
 }
 .rectangle ul li:nth-child(6) a .icon:hover {
     color: #1cc41c;
     box-shadow: 0 3px 5px 0 #1cc41c;
-    text-shadow: 0 0 5px #1cc41c, 0 0 5px #1cc41c;
+    border: 1px solid  #1cc41c;
     transform: scale(1.35) translateX(2px);
 }
 .rectangle ul li:nth-child(6) a:hover .text{
     color: lightgreen;
+    opacity: 1;
     text-shadow: 1px 1px 5px #1cc41c;
 }
 .rectangle ul li:nth-child(7) a .icon:hover {
-    color: #1456de;
-    box-shadow: 0 3px 5px 0 #1456de;
-    text-shadow: 0 0 5px #1456de, 0 0 5px #1456de;
+    color: #1b03a3;
+    box-shadow: 0 3px 5px 0 #1865ff;
+    border: 1px solid #1456de;
     transform: scale(1.35) translateX(2px);
 }
 .rectangle ul li:nth-child(7) a:hover .text{
     color: rgb(143, 143, 252);
+    opacity: 1;
     text-shadow: 1px 1px 5px #1456de;
 }
