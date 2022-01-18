@@ -19,7 +19,8 @@ body {
     margin-top: 160px;
     transition: 0.5s;
     backdrop-filter: blur(30%);
-    padding: 15px;
+    padding: 20px;
+
 }
 
 ion-icon {
@@ -27,7 +28,7 @@ ion-icon {
 }
 
 .rectangle:hover {
-    transform: scaleX(1.45) scaleY(1.5) translateX(5px);
+    /* transform: scaleX(1.45) scaleY(1.5) translateX(5px); */
     z-index: 1000;
     backdrop-filter: blur(50%);
 }
@@ -72,39 +73,30 @@ ion-icon {
     position: relative;
 }
 
-.rectangle ul li a .icon {
-    position: relative;
-    line-height: auto;
-    transition: 0.5s;
-    font-size: auto;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
+
+
 
 .rectangle ul li a .icon {
-    font-size: auto;
-    transform: translateY(0px);
     padding: 5px;
-}
-
-.rectangle ul li a .icon {
     position: relative;
     line-height: auto;
     transition: 0.5s;
     font-size: auto;
     border-radius: 20%;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
     position: relative;
+    border: 1px solid transparent;
 }
 .text{
     display: none;
     left: 20px;
     position: absolute;
     padding: 5px;
+    opacity: 0;
 }
-.rectangle ul li a .icon :nth-child(1) {
+/* .rectangle ul li a .icon :nth-child(1) {
     padding-top: 3px;
-}
+} */
 
 .rectangle ul:hover li a .icon {
     opacity: 0.1;
@@ -112,22 +104,26 @@ ion-icon {
 
 .rectangle ul li a:hover .icon{
     opacity: 1;
+    margin: 1rem 0;
 }
 .rectangle ul li a:hover .text {
     display: block;
-    left: 20px;
+    left: 35px;
     position: absolute;
-    opacity: 2;
+    opacity: 0;
+    font-size: 1.4rem;
+    transition: 2s;
 }
 
 .rectangle ul li:nth-child(1) a .icon:hover {
-    color: chocolate;
-    box-shadow: 0 3px 5px 0 chocolate;
-    text-shadow: 0 0 5px chocolate, 0 0 5px chocolate;
-    transform: scale(1.35) translateX(2px);
+    color: rgb(255, 178, 123);
+    box-shadow: 0 0px 5px 0 rgb(255, 178, 123);
+    border: 1px solid rgb(255, 178, 123);
+    transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(1) a:hover .text{
     color: rgb(216, 191, 153);
+    opacity: 1;
     text-shadow: 1px 1px 5px chocolate;
 }
 
