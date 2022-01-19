@@ -34,30 +34,32 @@ ion-icon {
 .container{
     width: 400px;
     min-height: 200vh;
-    font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .wrapper{
-    display: inline-flex;
+    display: block;
 }
-.wrapper .st1,.st3{
+.wrapper p:nth-child(1),p:nth-child(3){
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
-    transform: translateX(200px);
+    font-style: normal;
 }
-.wrapper .st2{
+.wrapper p:nth-child(2){
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 600;
+    font-style: italic;
 }
-.wrapper .st3{
-    color: white;
-    font-size: 40px;
-    font-weight: 400;
-    transform: translateX(200px),translateY(40px);
+.dt{
+    color: rgb(0, 225, 255);
+    font-size: 50px;
+    font-weight: 500px;
+    font-style: italic;
+    align-content: left;
+    justify-content: center;
 }
 
 .rectangle ul {
