@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    background: white;
+    background: black;
     min-height: 100vh;
 }
 
@@ -40,6 +40,7 @@ ion-icon {
 }
 .wrapper{
     display: block;
+    transform: translatey(180px);
 }
 .wrapper p:nth-child(1),p:nth-child(3){
     color: white;
@@ -53,7 +54,9 @@ ion-icon {
     font-weight: 600;
     font-style: italic;
 }
-
+.typed{
+    color: white;
+}
 .rectangle ul {
     display: list-item;
     list-style: none;
@@ -206,4 +209,18 @@ ion-icon {
     color: #73fdf9;
     opacity: 1;
     text-shadow: 1px 1px 10px #15f4ee;
+}
+.homeContainer{
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: auto;
+    width: 1100px;
+    transform: translatex(-250px) translatey(400px);
+    font-size: 20px;
+    color: white;
+}
+.aboutContainer{
+    background: black;
+    color: white;
 }
