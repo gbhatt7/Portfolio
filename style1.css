@@ -54,9 +54,6 @@ ion-icon {
     font-style: italic;
 }
 .wrapper .dt{
-    height: 150px;
-    line-height: 150px;
-    
 }
 .dt li{
     color: rgb(0, 225, 255);
@@ -68,7 +65,7 @@ ion-icon {
     list-style: none;
     position: relative;
     top: 0;
-    animation: slide 6s steps(3) infinite;
+    animation: slide s steps(3) infinite;
 }
 @keyframes slide{
     100%
