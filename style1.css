@@ -34,7 +34,32 @@ ion-icon {
 .container{
     width: 400px;
     min-height: 200vh;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .st1,.st3{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    transform: translateX(200px);
+}
+.wrapper .st2{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+.wrapper .st3{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    transform: translateX(200px),translateY(40px);
+}
+
 .rectangle ul {
     display: list-item;
     list-style: none;
