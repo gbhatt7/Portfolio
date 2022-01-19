@@ -53,15 +53,49 @@ ion-icon {
     font-weight: 600;
     font-style: italic;
 }
-.dt{
+.wrapper .dt{
+    height: 150px;
+    line-height: 150px;
+    
+}
+.dt li{
     color: rgb(0, 225, 255);
     font-size: 50px;
     font-weight: 500px;
     font-style: italic;
     align-content: left;
     justify-content: center;
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
 }
-
+@keyframes slide{
+    100%
+    {
+        top: -270px;
+    }
+}
+.dt li span{
+    position: relative;
+}
+.dt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid red;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+    100%
+    {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
 .rectangle ul {
     display: list-item;
     list-style: none;
