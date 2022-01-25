@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Georgia',sans;
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
-    background: black;
+    flex-direction: column;
+    background: #161616fa;
     min-height: 100vh;
 }
 
 .rectangle {
     position: fixed;
     width: 18.5px;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     z-index: 10;
     margin-top: 160px;
     transition: 0.5s;
-    backdrop-filter: blur(30%);
     padding: 20px;
 
 }
@@ -31,32 +31,6 @@ ion-icon {
     z-index: 1000;
     backdrop-filter: blur(50%);
 }
-.container{
-    width: 400px;
-    min-height: 200vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.wrapper{
-    display: block;
-    transform: translatey(180px);
-}
-.wrapper p:nth-child(1),p:nth-child(3){
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-}
-.wrapper p:nth-child(2){
-    color: white;
-    font-size: 80px;
-    font-weight: 600;
-    font-style: italic;
-}
-.typed{
-    color: white;
-}
 .rectangle ul {
     display: list-item;
     list-style: none;
@@ -65,10 +39,10 @@ ion-icon {
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background: black;
+    background: #161616fa;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to top, #008aff,#00ffe7);
+    background: rgb(109, 109, 109);
     border-radius: 20px;
 }
 .rectangle ul li {
@@ -115,12 +89,14 @@ ion-icon {
 }
 
 .rectangle ul:hover li a .icon {
-    opacity: 0.1;
+    opacity: 0.05;
 }
 
 .rectangle ul li a:hover .icon{
     opacity: 1;
     margin: 1rem 0;
+    padding-bottom: 1px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 }
 .rectangle ul li a:hover .text {
     display: block;
@@ -150,7 +126,7 @@ ion-icon {
     transform: scale(1.7) translateX(5px);
 }
 .rectangle ul li:nth-child(2) a:hover .text{
-    color: rgb(255, 159, 148);
+    color: salmon;
     opacity: 1;
     text-shadow: 1px 1px 10px #ff3853;
 }
@@ -211,16 +187,156 @@ ion-icon {
     text-shadow: 1px 1px 10px #15f4ee;
 }
 .homeContainer{
+    background: #161616fa;
+    color: rgb(255, 77, 77);
     align-items: center;
     justify-content: center;
-    background: black;
-    height: auto;
-    width: 1100px;
-    transform: translatex(-250px) translatey(400px);
-    font-size: 20px;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    padding: 200px;
+    letter-spacing: 2px;
+}
+.homeContainer p{
     color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.homeContainer p:nth-child(2){
+    padding-left: 8px;
+}
+.typed{
+    line-height: 100px;
+    padding-left: 5px;
+    color: rgb(255, 77, 77);
+    text-shadow: 0 0 2px red;
+    font-size: 30px;
+    font-weight: 20;
 }
 .aboutContainer{
-    background: black;
+    display: flex;
+    flex-direction: row;
     color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-color: #161616fa;
+    padding-bottom: 20px;
+}
+.aboutContainer .container1{
+    flex: 4;
+    background-color: #161616fa;
+    padding-left: 10rem;
+    padding-bottom: 100px;
+    align-items: left;
+}
+.aboutContainer .container1 h1{
+    font-size: 80px;
+    color: white;
+    margin: 20px;
+    font-family: 'Georgia',sans;
+    font-weight: 20;
+    border: 0px solid white;
+    border-bottom-width: 4px;
+    padding: 5px;
+}
+.aboutContainer .container1 h1 span{
+    border: 0px solid white;
+    border-bottom-width: 4px;
+}
+.aboutContainer .container1 button{
+    color: lightblue;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    background: transparent;
+    backdrop-filter: blur(40%);
+}
+.aboutContainer .container1 button:hover::before{
+    border-top: 8px solid coral;
+    border-left: 8px solid coral;
+}
+.aboutContainer .container1 button:hover::after{
+    border-bottom: 8px solid coral;
+    border-right: 8px solid coral;
+}
+.aboutContainer .container2{
+    color: white;
+    flex: 6;
+    background-color: yellow;
+    height: 90vh;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.aboutContainer .container2 .skill{
+    background-color: red;
+    color: white;
+}
+.aboutContainer .container2 .skill ul li a{
+    display: visible;
+    color: white;
+
+}
+.eduContainer{
+    background: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 200px;
+}
+.expContainer{
+    background: lightblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 200px;
+}
+.gitContainer{
+    background: greenyellow;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 200px;
+}
+.contactContainer{
+    background: crimson;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;;
+    font-size: 20px;
+    padding: 200px;
+}
+.helpContainer{
+    background: #161616fa;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 200px;
 }
