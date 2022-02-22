@@ -107,14 +107,13 @@ ion-icon {
   opacity: 1;
   margin: 1rem 0;
   padding-bottom: 1px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 .rectangle ul li a:hover .text {
   display: block;
-  left: 38px;
+  left: 60px;
   position: absolute;
   opacity: 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   transition: 2s;
 }
 
@@ -253,7 +252,7 @@ ion-icon {
 .aboutContainer .container1 h1 {
   font-size: 80px;
   color: white;
-  margin: 20px;
+  margin: 30px;
   font-family: "Georgia", sans;
   font-weight: 20;
   padding: 5px;
@@ -271,27 +270,11 @@ ion-icon {
   content: "";
   position: absolute;
   top: 110%;
-  width: 50%;
+  width: 45%;
   left: 20%;
   border-bottom: 2px solid white;
 }
 
-.aboutContainer .container1 button {
-  color: lightblue;
-  border-radius: 20px;
-  height: 50px;
-  width: 100px;
-  background: transparent;
-  backdrop-filter: blur(40%);
-}
-.aboutContainer .container1 button:hover::before {
-  border-top: 8px solid coral;
-  border-left: 8px solid coral;
-}
-.aboutContainer .container1 button:hover::after {
-  border-bottom: 8px solid coral;
-  border-right: 8px solid coral;
-}
 .aboutContainer .container2 {
   color: white;
   flex: 3;
@@ -301,9 +284,8 @@ ion-icon {
   margin-right: 20px;
   padding-left: 20px;
 }
-
 .eduContainer {
-  background: red;
+  background-color: #161616fa;
   color: white;
   align-items: center;
   justify-content: center;
@@ -314,7 +296,7 @@ ion-icon {
   padding: 200px;
 }
 .expContainer {
-  background: lightblue;
+  background-color: #161616fa;
   color: white;
   align-items: center;
   justify-content: center;
@@ -326,7 +308,7 @@ ion-icon {
   padding: 200px;
 }
 .gitContainer {
-  background: greenyellow;
+  background-color: #161616fa;
   color: white;
   align-items: center;
   justify-content: center;
@@ -338,7 +320,7 @@ ion-icon {
   padding: 200px;
 }
 .contactContainer {
-  background: crimson;
+  background-color: #161616fa;
   color: white;
   align-items: center;
   justify-content: center;
@@ -350,7 +332,7 @@ ion-icon {
   padding: 200px;
 }
 .helpContainer {
-  background: #161616fa;
+  background-color: #161616fa;
   color: white;
   align-items: center;
   justify-content: center;
