@@ -284,16 +284,63 @@ ion-icon {
   margin-right: 20px;
   padding-left: 20px;
 }
+
 .eduContainer {
-  background-color: #161616fa;
+  display: flex;
+  flex-direction: row;
   color: white;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   max-width: 100%;
-  font-size: 20px;
-  padding: 200px;
+  padding-bottom: 20px;
+  background-color: #161616fa;
+}
+.eduContainer .container1 {
+  flex: 2;
+  height: 100vh;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+}
+.eduContainer .container1 h2 {
+  font-size: 80px;
+  color: white;
+  margin: 30px;
+  font-family: "Georgia", sans;
+  font-weight: 20;
+  padding: 5px;
+  position: relative;
+}
+
+.eduContainer .container1 h2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 40%;
+  border-bottom: 2px solid white;
+}
+.eduContainer .container1 h2::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  width: 45%;
+  left: 20%;
+  border-bottom: 2px solid white;
+}
+
+.eduContainer .container2 {
+  color: white;
+  flex: 3;
+  border: 2px solid rgb(255, 255, 88);
+  border-radius: 5px;
+  height: 86vh;
+  margin-right: 20px;
+  padding-left: 20px;
 }
 .expContainer {
   background-color: #161616fa;
@@ -306,6 +353,49 @@ ion-icon {
   max-width: 100%;
   font-size: 20px;
   padding: 200px;
+}
+.expContainer .container1 {
+  flex: 2;
+  height: 100vh;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+}
+.expContainer .container1 h2 {
+  font-size: 80px;
+  color: white;
+  margin: 30px;
+  font-family: "Georgia", sans;
+  font-weight: 20;
+  padding: 5px;
+  position: relative;
+}
+
+.expContainer .container1 h2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 40%;
+  border-bottom: 2px solid white;
+}
+.expContainer .container1 h2::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  width: 45%;
+  left: 20%;
+  border-bottom: 2px solid white;
+}
+.expContainer .container2 {
+  color: white;
+  flex: 3;
+  border: 2px solid rgb(255, 255, 88);
+  border-radius: 5px;
+  height: 90vh;
+  margin-right: 20px;
+  padding-left: 20px;
 }
 .gitContainer {
   background-color: #161616fa;
